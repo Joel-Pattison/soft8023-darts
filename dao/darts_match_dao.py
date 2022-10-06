@@ -18,6 +18,7 @@ class DartsMatchDao:
         time.sleep(4)
 
         Match = Query()
+
         if not self.db.contains(Match.player1 == match.player1):
             self.db.insert({'type': match.type, 'player1': match.player1, 'player2': match.player2})
 
